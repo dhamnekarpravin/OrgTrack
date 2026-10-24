@@ -105,3 +105,6 @@ SIMPLE_JWT = {
     "SIGNING_KEY": os.environ["JWT_SECRET"],
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "OrgTracker <no-reply@orgtracker.local>"
